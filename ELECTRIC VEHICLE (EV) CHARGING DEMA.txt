@@ -1,0 +1,110 @@
+ELECTRIC VEHICLE (EV) CHARGING DEMAND FORECASTING
+
+Project Overview
+
+The EV Charging Demand Forecasting project is a data analytics and
+time-series forecasting solution designed to analyze historical electric
+vehicle charging activity and predict future charging demand.
+
+The project uses historical charging session data and the Prophet
+time-series forecasting model to estimate the expected number of EV
+charging sessions for upcoming days. The results can help understand
+demand patterns, support operational planning, and provide data-driven
+insights for EV charging infrastructure management.
+
+Objective
+
+The primary objective of this project is to forecast future EV charging
+sessions using historical daily charging data.
+
+Key objectives include: - Analyze historical EV charging session
+trends. - Prepare and transform time-series data for forecasting. -
+Build a forecasting model using Facebook Prophet. - Predict charging
+demand for the next 10 days. - Visualize historical and forecasted
+demand. - Export forecast results for further analysis and reporting. -
+Present important insights through a Power BI dashboard.
+
+Technologies Used
+
+-   Python
+-   Pandas
+-   Prophet
+-   Matplotlib
+-   Power BI
+-   CSV
+
+Python Workflow
+
+1.  Data Loading Historical EV charging data is loaded from a CSV file
+    using Pandas.
+
+2.  Data Preparation The original date and charging session columns are
+    renamed to:
+
+    -   ds: Date/time column required by Prophet
+    -   y: Target variable representing charging sessions
+
+    The date column is converted into datetime format to ensure correct
+    time-series processing.
+
+3.  Forecasting Model A Prophet model is created and trained using the
+    historical charging-session data. Prophet is designed for
+    time-series forecasting and can capture trends and recurring
+    patterns in historical data.
+
+4.  Future Forecast The trained model generates predictions for the next
+    10 days.
+
+5.  Forecast Visualization Matplotlib is used to visualize the forecast,
+    including the predicted charging demand and the forecast uncertainty
+    range.
+
+7.  Export The forecast results are saved as: forecast_results.csv
+
+Power BI Dashboard
+
+The Power BI dashboard provides an interactive view of EV charging
+demand and supports business-oriented analysis of the forecasting
+results.
+
+The dashboard can be used to monitor: - Historical charging demand -
+Charging-session trends - Forecasted demand - Demand patterns over
+time - Key performance indicators - Forecast insights and variations
+
+Business Value
+
+Accurate EV charging demand forecasting can help organizations better
+understand when charging infrastructure is likely to experience higher
+or lower demand.
+
+Potential applications include: - Charging-station capacity planning -
+Resource and infrastructure planning - Operational scheduling -
+Identifying high-demand periods - Supporting expansion decisions -
+Improving utilization of charging infrastructure - Data-driven EV
+ecosystem planning
+
+Project Outcome
+
+The project combines Python-based time-series forecasting with Power BI
+visualization to create an end-to-end EV charging demand analytics
+solution.
+
+Historical charging data is transformed into a forecasting-ready
+dataset, analyzed using Prophet, visualized through Python, and
+presented through an interactive Power BI dashboard. The final forecast
+is also exported to a CSV file for further analysis or reporting.
+
+Project Structure
+
+-   ev_charging_data.csv : Historical EV charging data
+-   forecasting script (.py) : Data preparation and Prophet forecasting
+-   forecast_results.csv : Generated 10-day forecast
+-   Power BI dashboard : Interactive demand analysis and visualization
+-   Project description (.txt) : Documentation of the project
+
+Conclusion
+
+This project demonstrates the practical use of Python, time-series
+forecasting, and Power BI for EV charging demand analytics. It provides
+a complete workflow from historical data processing and predictive
+modeling to business-focused visualization and reporting.
